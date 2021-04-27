@@ -1,0 +1,21 @@
+def encodeKey(v):
+    for key, value in encode.items():
+         if v == value:
+            return key
+
+print(Decode('decoding.txt'))
+
+file = open("GirlsFileText.txt")
+string=file.read()
+file = open('decoding.txt')
+text=file.read()
+print('Original file',string)
+print('-'*30)
+print('Encoded file:',text)
+print('-'*30)
+print('Decoded file',Decode('decoding.txt'))
+print('-'*30)
+if Decode('decoding.txt')==string:
+    print('Original and decoded files are equal')
+else:
+    print('Files are not equal')
