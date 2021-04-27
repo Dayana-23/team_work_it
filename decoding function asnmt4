@@ -1,0 +1,11 @@
+#Decoding function 
+def Decode(filename):
+    file = open(filename)
+    text=file.read()
+    answer=''
+    while text!='':
+        for i in encode.values():
+            if text.startswith(i):
+                answer=answer+encodeKey(i)
+                text = text[len(i):]
+    return answer
